@@ -1,6 +1,10 @@
 import request from 'supertest';
 import server from '../index';
 
+afterAll(() => {
+  server.close();
+});
+
 describe('Operaciones CRUD de cafes', () => {
   describe('GET /cafes', () => {
     it('should return a 200 status and an array with at least one object', async () => {
