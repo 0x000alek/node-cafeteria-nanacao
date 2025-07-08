@@ -8,7 +8,7 @@
     "format:check": "prettier --check .",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "test": "jest --forceExit"
+    "test": "jest --detectOpenHandles"
   },
   "author": "",
   "license": "ISC",
