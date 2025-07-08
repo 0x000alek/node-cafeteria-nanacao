@@ -25,29 +25,6 @@ Ejecuta el siguiente comando para instalar todas las dependencias del proyecto:
 npm install
 ```
 
-## 📁 Estructura del rpoyecto
-
-```plaintext
-node-cafeteria-nanacao                    # Carpeta raíz del proyecto
-├── docs                                  # Documentación del proyecto (manuales, diagramas, especificaciones)
-│   └── Instrucciones del desafío.pdf     # Instrucciones del desafío para crear tests con Jest y Supertest
-│   └── Rúbrica del desafío.pdf           # Rúbrica con criterios y puntajes para evaluar la prueba
-├── routes                                # Definición de rutas o endpoints de la API (configuración de Express)
-│   └── server.routes.js                  # Archivo principal de rutas del servidor para el CRUD de cafés
-├── test                                  # Pruebas automatizadas del proyecto (unitarias, de integración, etc.)
-│   └── server.spec.js                    # Especificaciones y pruebas Jest para validar los endpoints del API
-├── .gitignore                            # Define los archivos y carpetas que deben ser ignorados por Git
-├── .prettierignore                       # Define archivos/carpetas que Prettier debe omitir al formatear
-├── babel.config.js                       # Configuración de Babel para transpilar el código JS moderno
-├── cafes.json                            # Fuente de datos estáticos con los cafés disponibles
-├── eslint.config.js                      # Reglas y configuración para el linter ESLint (detección de errores/estilo)
-├── index.js                              # Archivo principal que inicia la aplicación (entry point)
-├── package-lock.json                     # Registro exacto de versiones instaladas para asegurar entornos consistentes
-├── package.json                          # Metainformación del proyecto, dependencias, scripts y configuración npm
-├── prettier.config.js                    # Configuración de estilo para el formateador de código Prettier
-└── README.md                             # Documentación principal del proyecto (descripción, instrucciones, etc.)
-```
-
 ## 📡 API - Endpoints
 
 A continuación se detallan los endpoints disponibles en el servidor Express:
