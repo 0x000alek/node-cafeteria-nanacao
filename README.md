@@ -1,6 +1,6 @@
 # Backend con Node y Express (G86) - Prueba: Cafetería Nanacao
 
-Este repositorio continene el dessarrollo de la solución propuesta para el Prueba Cafetería Nanacao\_, del curso **Backend con Node y Express (G86)**.
+Este repositorio continene el dessarrollo de la solución propuesta para el _Prueba Cafetería Nanacao_, del curso **Backend con Node y Express (G86)**.
 
 ## 🚀 Instalación
 
@@ -23,6 +23,29 @@ Ejecuta el siguiente comando para instalar todas las dependencias del proyecto:
 
 ```bash
 npm install
+```
+
+## 📁 Estructura del rpoyecto
+
+```plaintext
+node-cafeteria-nanacao                    # Carpeta raíz del proyecto
+├── docs                                  # Documentación del proyecto (manuales, diagramas, especificaciones)
+│   └── Instrucciones del desafío.pdf     # Instrucciones del desafío para crear tests con Jest y Supertest
+│   └── Rúbrica del desafío.pdf           # Rúbrica con criterios y puntajes para evaluar la prueba
+├── routes                                # Definición de rutas o endpoints de la API (configuración de Express)
+│   └── server.routes.js                  # Archivo principal de rutas del servidor para el CRUD de cafés
+├── test                                  # Pruebas automatizadas del proyecto (unitarias, de integración, etc.)
+│   └── server.spec.js                    # Especificaciones y pruebas Jest para validar los endpoints del API
+├── .gitignore                            # Define los archivos y carpetas que deben ser ignorados por Git
+├── .prettierignore                       # Define archivos/carpetas que Prettier debe omitir al formatear
+├── babel.config.js                       # Configuración de Babel para transpilar el código JS moderno
+├── cafes.json                            # Fuente de datos estáticos con los cafés disponibles
+├── eslint.config.js                      # Reglas y configuración para el linter ESLint (detección de errores/estilo)
+├── index.js                              # Archivo principal que inicia la aplicación (entry point)
+├── package-lock.json                     # Registro exacto de versiones instaladas para asegurar entornos consistentes
+├── package.json                          # Metainformación del proyecto, dependencias, scripts y configuración npm
+├── prettier.config.js                    # Configuración de estilo para el formateador de código Prettier
+└── README.md                             # Documentación principal del proyecto (descripción, instrucciones, etc.)
 ```
 
 ## 📡 API - Endpoints
@@ -109,7 +132,7 @@ npm run test
 Si todo está correctamente configurado, deberías ver en la terminal una salida similar a la siguiente:
 
 ```bash
-> desafio@1.0.1 test
+> desafio@1.0.2 test
 > jest --forceExit
 
   console.log
@@ -135,13 +158,25 @@ Time:        0.723 s
 Ran all test suites.
 ```
 
+## 📜 Scripts disponibles
+
+Estos comandos pueden ejecutarse con `npm run <script>`:
+
+| Script         | Descripción                                                                   |
+| -------------- | ----------------------------------------------------------------------------- |
+| `format`       | Aplica formato al código usando Prettier.                                     |
+| `format:check` | Verifica si el código está correctamente formateado con Prettier.             |
+| `lint`         | Ejecuta ESLint para analizar el código en busca de errores o malas prácticas. |
+| `lint:fix`     | Ejecuta ESLint y corrige automáticamente errores solucionables.               |
+| `test`         | Ejecuta la suite de pruebas con Jest, detectando handles abiertos.            |
+
 ## 📦 Dependencias
 
 | Dependencia | Versión                                                               | Descripción                                                                                                                                               |
 | ----------- | --------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| express     | ![express](https://img.shields.io/badge/express-4.18.1-brightgreen)   | Para facilitar la creación de servidores y APIs web. Proporciona una estructura clara para definir rutas, middlewares, controladores y manejo de errores. |
-| jest        | ![jest](https://img.shields.io/badge/jest-28.1.3-blue)                | Framework de pruebas para JavaScript. Permite ejecutar tests unitarios, de integración y mocks de forma sencilla y rápida.                                |
-| supertest   | ![supertest](https://img.shields.io/badge/supertest-6.2.4-blueviolet) | Librería de pruebas HTTP que permite testear endpoints de Express (o cualquier servidor) con sintaxis simple basada en `superagent`.                      |
+| express     | ![express](https://img.shields.io/badge/express-5.1.0-brightgreen)    | Para facilitar la creación de servidores y APIs web. Proporciona una estructura clara para definir rutas, middlewares, controladores y manejo de errores. |
+| jest        | ![jest](https://img.shields.io/badge/jest-30.0.4-blue)                | Framework de pruebas para JavaScript. Permite ejecutar tests unitarios, de integración y mocks de forma sencilla y rápida.                                |
+| supertest   | ![supertest](https://img.shields.io/badge/supertest-7.1.3-blueviolet) | Librería de pruebas HTTP que permite testear endpoints de Express (o cualquier servidor) con sintaxis simple basada en `superagent`.                      |
 
 ### Desarrollo
 
