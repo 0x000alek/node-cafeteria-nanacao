@@ -133,28 +133,28 @@ Si todo está correctamente configurado, deberías ver en la terminal una salida
 
 ```bash
 > desafio@1.0.2 test
-> jest --forceExit
+> jest --detectOpenHandles
 
   console.log
     SERVER ON
 
-      at Object.log (index.js:6:26)
+      at Server.log (index.js:14:11)
 
  PASS  tests/server.spec.js
   Operaciones CRUD de cafes
     GET /cafes
-      ✓ should return a 200 status and an array with at least one object (34 ms)
+      ✓ should return a 200 status and an array with at least one object (50 ms)
     DELETE /cafes/:id
-      ✓ should return a 404 status if the cafe id does not exist (4 ms)
+      ✓ should return a 404 status if the cafe id does not exist (9 ms)
     POST /cafes
-      ✓ should return a 201 status when a new cafe is added (15 ms)
+      ✓ should return a 201 status when a new cafe is added (18 ms)
     PUT /cafes/:id
-      ✓ should return a 400 status code if the ID in the params is different from the ID in the payload (2 ms)
+      ✓ should return a 400 status code if the ID in the params is different from the ID in the payload (7 ms)
 
 Test Suites: 1 passed, 1 total
 Tests:       4 passed, 4 total
 Snapshots:   0 total
-Time:        0.723 s
+Time:        0.898 s, estimated 1 s
 Ran all test suites.
 ```
 
